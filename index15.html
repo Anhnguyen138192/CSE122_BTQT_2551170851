@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính đơn giản (JavaScript)</title>
+    <link rel="stylesheet" href="style15.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <!-- Màn hình -->
+        <div class="display">
+            <div id="expression"></div>
+            <div id="result">0</div>
+        </div>
+
+        <!-- Bàn phím -->
+        <div class="buttons">
+
+            <button class="clear" onclick="clearAll()">C</button>
+            <button class="operator" onclick="pressParen()">( )</button>
+            <button class="operator" onclick="pressOperator('%')">%</button>
+            <button class="operator" onclick="pressOperator('÷')">÷</button>
+
+            <button class="number" onclick="pressNumber('7')">7</button>
+            <button class="number" onclick="pressNumber('8')">8</button>
+            <button class="number" onclick="pressNumber('9')">9</button>
+            <button class="operator" onclick="pressOperator('×')">×</button>
+
+            <button class="number" onclick="pressNumber('4')">4</button>
+            <button class="number" onclick="pressNumber('5')">5</button>
+            <button class="number" onclick="pressNumber('6')">6</button>
+            <button class="operator" onclick="pressOperator('−')">−</button>
+
+            <button class="number" onclick="pressNumber('1')">1</button>
+            <button class="number" onclick="pressNumber('2')">2</button>
+            <button class="number" onclick="pressNumber('3')">3</button>
+            <button class="operator" onclick="pressOperator('+')">+</button>
+
+            <button class="number zero" onclick="pressNumber('0')">0</button>
+            <button class="number" onclick="pressDot()">.</button>
+            <button class="equal" onclick="calculate()">=</button>
+
+        </div>
+    </div>
+
+    <script src="script15.js"></script>
+
+</body>
+</html>
