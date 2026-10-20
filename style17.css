@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: #fff7ed;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    color: #1f2937;
+}
+
+form {
+    width: 100%;
+    max-width: 380px;
+    padding: 28px;
+    background: #FFFFFF;
+    border: 1px solid #fed7aa;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(194, 65, 12, 0.10);
+}
+
+h1 {
+    margin: 0 0 4px;
+    font-size: 24px;
+    color: #c2410c;
+}
+
+.sub {
+    margin: 0 0 18px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.field {
+    margin-bottom: 14px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus-visible {
+    box-shadow: 0 0 0 3px rgba(194, 65, 12, 0.2);
+}
+
+input.invalid {
+    border-color: #dc2626;
+    background: #fef2f2;
+}
+
+input.valid {
+    border-color: #16a34a;
+}
+
+.msg {
+    margin-top: 4px;
+    min-height: 16px;
+    font-size: 12px;
+}
+
+.msg.error {
+    color: #dc2626;
+}
+
+.msg.ok {
+    color: #16a34a;
+}
+
+button {
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: #c2410c;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #9a3412;
+}
+
+.success {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 14px;
+    color: #16a34a;
+}
+
