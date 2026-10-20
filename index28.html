@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 28 - Carousel &amp; Tabs (Bootstrap)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style28.css">
+</head>
+<body>
+  <div class="container page-box py-4">
+    <h2 class="text-center text-primary mb-4">Khám phá điểm đến</h2>
+
+    <div id="carouselDiemDen" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselDiemDen" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselDiemDen" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselDiemDen" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner rounded-3">
+        <div class="carousel-item active">
+          <img src="Anh/Bai28/1-vinh-ha-long.jpg" class="d-block w-100 slide-img" alt="Vịnh Hạ Long">
+          <div class="carousel-caption">
+            <h5>Vịnh Hạ Long</h5>
+            <p>Di sản thiên nhiên thế giới</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Anh/Bai28/2-son-doong.jpg" class="d-block w-100 slide-img" alt="Hang Sơn Đoòng">
+          <div class="carousel-caption">
+            <h5>Hang Sơn Đoòng</h5>
+            <p>Hang động tự nhiên lớn nhất thế giới</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Anh/Bai28/3-thac-ban-gioc.jpg" class="d-block w-100 slide-img" alt="Thác Bản Giốc">
+          <div class="carousel-caption">
+            <h5>Thác Bản Giốc</h5>
+            <p>Thác nước hùng vĩ nơi biên giới Cao Bằng</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDiemDen" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Trước</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselDiemDen" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Sau</span>
+      </button>
+    </div>
+
+    <ul class="nav nav-pills justify-content-center mt-4 mb-3" id="tabTour" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="tab-gioithieu" data-bs-toggle="pill" data-bs-target="#gioithieu" type="button" role="tab" aria-controls="gioithieu" aria-selected="true">Giới thiệu</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-lichtrinh" data-bs-toggle="pill" data-bs-target="#lichtrinh" type="button" role="tab" aria-controls="lichtrinh" aria-selected="false">Lịch trình</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab-chiphi" data-bs-toggle="pill" data-bs-target="#chiphi" type="button" role="tab" aria-controls="chiphi" aria-selected="false">Chi phí</button>
+      </li>
+    </ul>
+
+    <div class="tab-content tab-box" id="tabTourContent">
+      <div class="tab-pane fade show active" id="gioithieu" role="tabpanel" aria-labelledby="tab-gioithieu" tabindex="0">
+        Tour 3 ngày 2 đêm khám phá các danh thắng miền Bắc, khởi hành hằng tuần.
+      </div>
+      <div class="tab-pane fade" id="lichtrinh" role="tabpanel" aria-labelledby="tab-lichtrinh" tabindex="0">
+        <strong>Ngày 1:</strong> Hà Nội - Hạ Long, du thuyền tham quan vịnh.<br>
+        <strong>Ngày 2:</strong> Hạ Long - Ninh Bình, đi thuyền Tràng An.<br>
+        <strong>Ngày 3:</strong> Ninh Bình - Hà Nội, mua sắm và kết thúc tour.
+      </div>
+      <div class="tab-pane fade" id="chiphi" role="tabpanel" aria-labelledby="tab-chiphi" tabindex="0">
+        Giá tour: 3.500.000 đ/người (đã gồm xe đưa đón, khách sạn, vé tham quan và bữa ăn theo chương trình).
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
