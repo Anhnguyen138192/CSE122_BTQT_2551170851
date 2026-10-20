@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px 16px 40px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f8fafc;   
+  color: #0f172a;
+}
+.tieu-de {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.tieu-de h1 {
+  margin: 0 0 6px;
+  font-size: 1.8rem;
+}
+
+.tieu-de p {
+  margin: 0;
+  color: #475569;
+  font-size: 0.95rem;
+}
+.luoi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.o-anh {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  aspect-ratio: 4 / 3;
+}
+.o-anh img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.o-anh:hover img {
+  transform: scale(1.12);
+}
+.o-anh figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px 14px 12px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.o-anh:hover figcaption {
+  opacity: 1;
+}
+
+
