@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: #FDF8EF;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #E65100;
+    margin: 0 0 24px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.col-anh {
+    flex: 0 0 200px;
+}
+
+.col-anh img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.col-bang {
+    flex: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #FFFFFF;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+th,
+td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #E0D6C2;
+}
+
+th {
+    background: #E65100;
+    color: #FFFFFF;
+}
+
+/* Cột STT hẹp, căn giữa */
+.stt {
+    width: 70px;
+    text-align: center;
+}
+
+/* Dòng xen kẽ */
+tbody tr:nth-child(odd) {
+    background: #FFFFFF;
+}
+
+tbody tr:nth-child(even) {
+    background: #FDF8EF;
+}
+
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-anh {
+        flex: none;
+        width: 160px;
+    }
+
+    .col-bang {
+        width: 100%;
+    }
+}
