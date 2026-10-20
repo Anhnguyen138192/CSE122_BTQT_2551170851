@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  background: #e9edf1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  padding: 15px 0;
+  color: #333;
+}
+
+.container {
+  width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  /* menu trái 110px, content phải */
+  column-gap: 0;
+  align-items: stretch;
+}
+
+.title {
+  padding: 14px 15px 12px;
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+  border-bottom: 3px solid #1668C1;
+}
+
+.title h1 {
+  margin: 0;
+  color: #1668C1;
+  font-size: 20px;
+}
+
+.content {
+  grid-column: 2;
+  grid-row: 2;
+  min-width: 0;
+  padding: 15px 15px 10px 15px;
+  border-left: 1px solid #ddd;
+}
+
+.menu {
+  grid-column: 1;
+  grid-row: 2;
+  padding: 5px 10px 5px 10px;
+}
+
+.menu-title {
+  margin: 0;
+  margin: 0 0 0 5px;
+  color: #666;
+  text-transform: uppercase;
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 8px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.menu a {
+  color: #1668C1;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.cat-bar {
+  margin: 0 0 6px;
+  padding: 6px 10px;
+  background: #1668C1;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+section {
+  margin-bottom: 18px;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 10px 0 12px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.post .text {
+  flex: 1;
+}
+
+.post h3 {
+  margin: 0 0 5px;
+  color: #1668C1;
+  font-size: 13px;
+}
+
+.post p {
+  margin: 0 0 3px;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.more {
+  color: #1668C1;
+  font-size: 8px;
+}
+
+.post img {
+  flex: 0 0 auto;
+  height: 86px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.to-top {
+  margin: 0;
+  padding: 15px 15px 10px 10px;
+  text-align: right;
+  grid-column: 1 / -1;
+}
+
+.to-top a {
+  color: #1668C1;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
