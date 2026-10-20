@@ -1,0 +1,127 @@
+:root {
+  --nen: #f1f5f9;      
+  --chu: #0f172a;      
+  --the: #ffffff;       
+  --vien: #cbd5e1;   
+  --nhan: #2563eb;     
+  --nut: #2563eb;      
+  --nut-nhan: #60a5fa;  
+  --nut-chu: #ffffff;  
+  --chuyen: 0.35s ease; 
+}
+
+:root.toi {
+  --nen: #0f172a;       
+  --chu: #e2e8f0;       
+  --the: #1e293b;      
+  --vien: #334155;     
+  --nhan: #60a5fa;     
+  --nut: #2563eb;      
+  --nut-nhan: #60a5fa;
+  --nut-chu: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 32px 16px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--nen);
+  color: var(--chu);
+  transition: background-color var(--chuyen), color var(--chuyen);
+}
+
+.khung {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--chu);
+  transition: color var(--chuyen);
+}
+
+.nut-gat {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border: none;                
+  border-radius: 999px;       
+  background-color: var(--nut);
+  color: var(--nut-chu);
+  font: inherit;
+  cursor: pointer;              
+  transition: background-color var(--chuyen), color var(--chuyen);
+}
+
+.nut-gat:hover,
+.nut-gat:focus-visible {
+  background-color: var(--nut-nhan);
+  outline: none;
+}
+
+.nut-gat .rail {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.35); 
+}
+
+.nut-gat .chot {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;          
+  background: var(--nut-chu);
+  transition: transform var(--chuyen); 
+}
+
+:root.toi .nut-gat .chot {
+  transform: translateX(18px);
+}
+
+.the {
+  background-color: var(--the);
+  border: 1px solid var(--vien);
+  border-radius: 10px;         
+  padding: 16px 20px;
+  margin-bottom: 16px;         
+  transition: background-color var(--chuyen), border-color var(--chuyen), color var(--chuyen);
+}
+
+.the h2 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  color: var(--nhan);
+  transition: color var(--chuyen);
+}
+
+.the p {
+  margin: 0;
+  color: var(--chu);
+  transition: color var(--chuyen);
+}
+
+footer {
+  margin-top: 24px;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
