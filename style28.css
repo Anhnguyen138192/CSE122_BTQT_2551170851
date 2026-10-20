@@ -1,0 +1,49 @@
+body {
+  background: #ffffff;
+}
+
+.page-box {
+  max-width: 760px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.slide-img {
+  height: 340px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 8px;
+  padding: 8px 16px;
+  bottom: 28px;
+  left: 20%;
+  right: 20%;
+}
+
+.carousel-caption h5 {
+  margin-bottom: 2px;
+}
+
+.carousel-caption p {
+  margin-bottom: 0;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #0d6efd;
+  color: #FFFFFF;
+}
+
+.tab-box {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #212529;
+  background: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 20px;
+  min-height: 90px;
+}
+
