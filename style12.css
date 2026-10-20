@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("Anh/Bai12/Nen.gif") repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.khung {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 28px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.25);
+}
+
+.o-lich {
+    padding: 28px 10px;
+    border: 1px solid #ccc;
+    background: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.nam {
+    color: #C62828;
+    font-size: 16px;
+}
+
+.thang,
+.thu {
+    color: #1565C0;
+    font-size: 18px;
+}
+
+.thang {
+    margin-top: 4px;
+}
+
+.thu {
+    margin-top: 2px;
+}
+
+.so-ngay {
+    color: #C62828;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.loi-chao {
+    margin: 24px 0;
+    color: #C62828;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+}
+
+.form-nhap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px 16px;
+    padding: 18px 16px;
+    border: 2px solid #1565C0;
+    border-radius: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.o-nhap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.o-nhap label {
+    font-size: 16px;
+    color: #333;
+}
+
+.o-nhap input {
+    width: 80px;
+    padding: 5px 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nut-in {
+    padding: 10px 18px;
+    white-space: nowrap;
+    align-self: flex-end;
+    border: none;
+    border-radius: 6px;
+    background: #546E7A;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nut-in:hover {
+    background: #455A64;
+}
