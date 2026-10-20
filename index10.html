@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ với chúng tôi</title>
+    <link rel="stylesheet" href="style10.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Liên hệ với chúng tôi</h1>
+            <p>Vui lòng điền thông tin bên dưới, chúng tôi sẽ phản hồi trong 24 giờ.</p>
+        </div>
+        <form>//bao quanh các ô nhập
+            <div class="row">
+                <div class="form-group">
+<label for="name">Họ và tên</label>//bấm vào chữ "Họ và tên" thì con trỏ nhảy vào ô nhập
+        <input type="text"ô chữ thường. id="name" value="Nguyễn Văn An">               
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email"trình duyệt tự kiểm tra có dạng email (có @) khi submit, và bàn phím điện thoại hiện ký tự @. id="email" value="an.nv@tlu.edu.vn">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label for="phone">Số điện thoại</label>
+<input type="tel" id="phone"bàn phím điện thoại hiện bàn phím số  value="0987654321">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Chủ đề</label>
+                    <select id="subject">danh sách thả xuống
+                        <option>Hỏi về khóa học</option>một lựa chọn, và mục đầu tiên được chọn mặc định.
+                        <option>Hỏi về học phí</option>
+                        <option>Hỏi về lịch học</option>
+                        <option>Khác</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="content">Nội dung</label>
+                <textarea id="content" rows="4" ô nhập nhiều dòng>Em muốn hỏi về lịch nộp bài tập môn Lập trình Web ạ.</textarea>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox"ô tick id="agree" checked>
+                <label for="agree">
+                    Tôi đồng ý nhận email<br>
+                    phản hồi.
+                </label>
+            </div>
+
+            <div class="buttons">
+                submit gửi form. Reset đưa mọi ô về giá trị ban đầu trong HTML.
+                <button type="submit" class="btn-send">Gửi liên hệ</button>
+                <button type="reset" class="btn-reset">Nhập lại</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
