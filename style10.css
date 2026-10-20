@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 24px;
+    background-color: #f1f5f9;
+    font-family: Arial, sans-serif;
+}
+.form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.form-header {
+    background-color: #0f766e;
+    color: #ffffff;
+    padding: 20px 28px;
+}
+.form-header h1 {
+    margin: 0 0 6px;
+    font-size: 25px;
+}
+.form-header p {
+    margin: 0;
+    font-size: 15px;
+}
+form {
+    padding: 24px 28px;
+}
+.row {
+    display: flex;  
+    gap: 24px;
+    margin-bottom: 16px;
+}
+.form-group {
+    flex: 1; 
+}
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #334155;
+    font-size: 14px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0f766e;
+}
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+.checkbox-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+}
+.checkbox-group input {
+    width: 16px;
+    height: 16px;
+}
+.checkbox-group label {
+    color: #475569;
+    font-size: 14px;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+button {
+    border: none; 
+    padding: 11px 22px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-send {
+    background-color: #0f766e;
+    color: white;
+}
+.btn-reset {
+    background-color: #e2e8f0;
+    color: #475569;
+}
+.btn-send:hover {
+    background-color: #115e59;
+}
+.btn-reset:hover {
+    background-color: #cbd5e1;
+}
+
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
