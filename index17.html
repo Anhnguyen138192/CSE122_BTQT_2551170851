@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài 17 - Đăng ký tài khoản</title>
+<link rel="stylesheet" href="style17.css">
+</head>
+<body>
+<form id="regForm" novalidate>
+  <h1>Đăng ký tài khoản</h1>
+  <p class="sub">Dữ liệu được kiểm tra bằng JavaScript trước khi gửi.</p>
+
+  <div class="field">
+    <label for="name">Họ và tên</label>
+    <input type="text" id="name" autocomplete="name">
+    <div class="msg" id="name-msg"></div>
+  </div>
+
+  <div class="field">
+    <label for="email">Email</label>
+    <input type="text" id="email" autocomplete="email">
+    <div class="msg" id="email-msg"></div>
+  </div>
+
+  <div class="field">
+    <label for="password">Mật khẩu</label>
+    <input type="password" id="password" autocomplete="new-password">
+    <div class="msg" id="password-msg"></div>
+  </div>
+
+  <div class="field">
+    <label for="confirm">Xác nhận mật khẩu</label>
+    <input type="password" id="confirm" autocomplete="new-password">
+    <div class="msg" id="confirm-msg"></div>
+  </div>
+
+  <button type="submit">Đăng ký</button>
+  <div class="success" id="success"></div>
+</form>
+
+<script src="script17.js"></script>
+</body>
+</html>
