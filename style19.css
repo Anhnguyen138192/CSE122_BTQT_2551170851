@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 20px;
+    background: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container img{
+    float: left;
+    width: 300px;
+    max-width: 33%;
+    height: auto;
+    margin: 0 25px 15px 0;
+    border-radius: 6px;
+    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.45);
+}
+
+/* Tiêu đề màu vàng, có bóng đổ */
+.title {
+    margin: 0 0 15px;
+    font-size: 28px;
+    color: #C9A227;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+.content {
+    overflow: hidden; 
+    padding: 15px 20px;
+    border: 2px dashed #E07B00;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.content p {
+    margin: 0 0 12px;
+}
+
+.content p:last-child {
+    margin-bottom: 0;
+}
+
+.nhan-manh {
+    color: #C62828;
+    font-weight: bold;
+}
+
+
