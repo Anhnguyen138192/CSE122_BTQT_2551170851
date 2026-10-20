@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chế độ Sáng / Tối</title>
+  <link rel="stylesheet" href="style22.css">
+</head>
+<body>
+  <div class="khung">
+    <header>
+      <h1>Chế độ Tối / Sáng</h1>
+      <button id="nutGat" class="nut-gat" type="button" role="switch" aria-checked="false" aria-label="Chuyển chế độ Sáng/Tối">
+        <span class="rail"><span class="chot"></span></span>
+      </button>
+    </header>
+    <section class="the">
+      <h2>Biến CSS (CSS Variables)</h2>
+      <p>Toàn bộ màu được khai báo trong :root và ghi đè bằng class .toi.</p>
+    </section>
+
+    <section class="the">
+      <h2>Chuyển đổi bằng JavaScript</h2>
+      <p>Nút gạt thêm/bỏ class .toi trên thẻ html nên giao diện đổi ngay khi bấm.</p>
+    </section>
+
+    <section class="the">
+      <h2>Chuyển màu mượt</h2>
+      <p>Dùng transition cho màu nền và chữ, nên khi đổi theme màu chuyển dần, không bị giật.</p>
+    </section>
+    <footer id="ghiChu">Đây là giao diện ở chế độ Sáng (đang bật).</footer>
+  </div>
+  <script src="script22.js"></script>
+</body>
+</html>
